@@ -4,7 +4,7 @@ import Header from '../components/header'
 
 export default function Home() {
   return (
-    <div className="">
+    <div className=" h-screen bg-gray-50 overflow-y-scroll scrollbar-hide">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

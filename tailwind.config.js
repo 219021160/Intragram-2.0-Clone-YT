@@ -7,9 +7,13 @@ module.exports = {
   },
   variants: {
     extend: {},
+    scrollbar: ['dark']
   },
   plugins: [ require("@tailwindcss/forms")({
     strategy: 'class',
-  })
+  }),
+  require('tailwind-scrollbar'),
+  require('tailwind-scrollbar-hide')
 ],
 }
+
