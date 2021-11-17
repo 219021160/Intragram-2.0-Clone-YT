@@ -32,7 +32,7 @@ function Stories() {
 
 
         // console.log("suggestions")
-        console.log(suggestionsArr)
+        // console.log(suggestionsArr)
         setSuggestions(suggestionsArr);
 
     },[]); // [] mean it will run once since no dependencies are included/specified

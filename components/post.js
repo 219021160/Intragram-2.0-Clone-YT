@@ -20,10 +20,17 @@ import {
  import { HeartIcon as HeartIconFilled } from "@heroicons/react/solid"
 
 
+ import myImage from "../assets/1Image.jpg"
+import Image from 'next/image'
+
+
+
 
 
 
 function Post({id, username, userImg, img, caption}) {
+
+
     return (
 
         <div className="bg-white my-7 border rounded-sm ">
@@ -37,11 +44,12 @@ function Post({id, username, userImg, img, caption}) {
 
 
 
-
             {/* image */}
-            <img className="w-full p-2 object-cover" src={img} alt="user image" />
-
-
+            {/* <img className="w-full p-2 object-cover" src={img} alt="user image" /> */}
+            
+            <div className=" relative w-full p-4 pt-0">
+                <Image src={myImage} objectFit="contain" alt="user image" />
+            </div>
 
 
             {/* button */}

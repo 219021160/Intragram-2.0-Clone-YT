@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Feed from '../components/feed'
 import Header from '../components/header'
 
+
+
+
 export default function Home() {
   return (
     <div className=" h-screen bg-gray-50 overflow-y-scroll scrollbar-hide ">
@@ -9,6 +12,9 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+
+     
 
 
 

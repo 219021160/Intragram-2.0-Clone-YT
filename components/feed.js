@@ -1,10 +1,15 @@
 import React from 'react'
+import MiniProfile from './miniProfile'
 import Posts from './posts'
 import Stories from './stories'
+import Suggestions from "./suggestions"
+
+
+
 
 function Feed() {
     return (
-        <main className="grid grid-cols-1 md:gird-cols-2 md:max-w-3xl xl:grid-col-2 xl:max-w-6xl mx-auto mt-5 md:mt-5">
+        <main className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl xl:grid-cols-3 xl:max-w-6xl mx-auto mt-5 md:mt-5">
 
             
             {/* Section */}
@@ -23,15 +28,15 @@ function Feed() {
 
 
             {/* Section */}
-            <section>
+            <section className="hidden xl:inline-grid md:col-span-1 ">
 
-                {/* Mini Profile */}
-                Mini Profile
+                <div className="fixed top-20">
+                    {/* Mini Profile */}
+                    <MiniProfile />
 
-
-
-                {/* Suggestions */}
-                Suggestions
+                    {/* Suggestions */}
+                    <Suggestions />
+                </div>
 
             </section>
 
