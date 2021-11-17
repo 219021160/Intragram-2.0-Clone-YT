@@ -15,4 +15,8 @@
     .navBtnProfile{
         @apply h-10 w-10 rounded-full p-px border cursor-pointer hover:scale-125 transition-all duration-150 ease-out
     }
+
+    .btn{
+        @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out
+    }
 }
